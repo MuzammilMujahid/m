@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <style>
+        body {
+            background: url('https://raw.githubusercontent.com/MuzammilMujahid/resume/05411c48f7bd161c78c609c91d98e4788850c96d/best.jpg') no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container for centering content */
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Styles for the form */
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive table layout */
+        table {
+            width: 100%;
+        }
+
+        table th {
+            text-align: left;
+        }
+
+        /* Input fields and labels */
+        label {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select, textarea {
+            width: calc(100% - 170px); /* Adjust as needed */
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Buttons */
+        input[type="submit"], input[type="reset"], input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            label {
+                width: 100%;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            input, select, textarea {
+                width: 100%;
+            }
+
+            input[type="submit"], input[type="reset"], input[type="button"] {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 style="text-align: center;">Form Page</h1>
+        </header>
+        
+        <form method="post" action="F:\Website\submit.html" name="login form" target="_blank" accept-charset="utf-8" novalidate enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <th colspan="2"><u>Form Page</u></th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <label for="fname">First Name:</label>
+                            <input type="text" name="Firstname" id="fname" placeholder="Enter Your First Name" required maxlength="15">
+                            <br><br>
+                            <label for="lname">Last Name:</label>
+                            <input type="text" name="Lastname" id="lname" placeholder="Enter Your Last Name" required maxlength="15">
+                        </fieldset>
+                    </td>
+                </tr>
+                <!-- Other fieldsets and form elements go here -->
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                        <input type="button" value="Click Me">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
